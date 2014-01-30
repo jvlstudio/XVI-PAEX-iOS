@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetworkPIN">
+            <connections>
+                <outlet property="butCancel" destination="3sj-nb-MBj" id="efo-aP-5S6"/>
+                <outlet property="butSend" destination="5zu-L1-MoG" id="jmp-0h-8Md"/>
+                <outlet property="lab1" destination="6NQ-73-ffJ" id="obH-pa-GU4"/>
+                <outlet property="lab2" destination="LDG-ok-oIc" id="wbH-kS-p8N"/>
+                <outlet property="scr" destination="PUs-wJ-oIQ" id="wlX-YO-Hbc"/>
+                <outlet property="tfPIN" destination="7Va-px-G0a" id="i3b-no-DRk"/>
+                <outlet property="v" destination="1" id="ncM-85-FyN"/>
+                <outlet property="view" destination="Q7r-5r-2YL" id="wL8-q8-Bar"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="Q7r-5r-2YL">
+            <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PUs-wJ-oIQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="nZt-Ja-U2G"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.92941182850000004" green="0.94901967050000002" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="446"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="vB4-xV-BKh">
+                    <rect key="frame" x="0.0" y="-176" width="320" height="269"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.87450987099999999" green="0.88627457620000005" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" id="6NQ-73-ffJ">
+                    <rect key="frame" x="20" y="10" width="280" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text" base64-UTF8="YES">
+Vm9jw6ogZ29zdGFyaWEgZGUgZW50cmFyIG5vIANncnVwbyBkZSBuZXR3b3JraW5nIGRvIFBBRVg/A
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insira o código verificador que você recebeu após a sua inscrição." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" id="LDG-ok-oIc">
+                    <rect key="frame" x="20" y="97" width="280" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="network_field_pin.png" id="bti-7m-bb1">
+                    <rect key="frame" x="0.0" y="177" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Código PIN" minimumFontSize="17" id="7Va-px-G0a">
+                    <rect key="frame" x="46" y="185" width="254" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="doneEditing:" destination="-1" eventType="editingDidEndOnExit" id="Bb2-Vg-EKR"/>
+                        <outlet property="delegate" destination="-1" id="3TK-Rf-oiM"/>
+                    </connections>
+                </textField>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="line.png" id="uhX-aG-lCU">
+                    <rect key="frame" x="28" y="252" width="265" height="20"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5zu-L1-MoG">
+                    <rect key="frame" x="198" y="280" width="95" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="bt_enviar.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressSend:" destination="-1" eventType="touchUpInside" id="Oqy-iu-v0T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3sj-nb-MBj">
+                    <rect key="frame" x="28" y="280" width="98" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="bt_cancelar.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressCancel:" destination="-1" eventType="touchUpInside" id="Wdg-E8-TVq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_cancelar.png" width="95" height="20"/>
+        <image name="bt_enviar.png" width="95" height="21"/>
+        <image name="line.png" width="265" height="20"/>
+        <image name="network_field_pin.png" width="320" height="44"/>
+    </resources>
+</document>

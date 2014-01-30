@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+//@class Home;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong) UITabBarController *tabBar;
+
+#pragma mark -
+#pragma mark Opening Methods
+
+- (UIViewController*) openingWithAnimation;
+- (UIViewController*) openingWithoutAnimation;
 
 @end

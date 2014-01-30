@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_access</string>
+		<key>label</key>
+		<string>Acesso ao Local do Evento</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_panelists</string>
+		<key>label</key>
+		<string>Palestrantes</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_campus</string>
+		<key>label</key>
+		<string>Instalações do Campus</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_organization</string>
+		<key>label</key>
+		<string>Organização do Evento</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_schedule</string>
+		<key>label</key>
+		<string>Cumprimento do Horário</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_food_lunch</string>
+		<key>label</key>
+		<string>Refeições: Almoço</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_food_coffee</string>
+		<key>label</key>
+		<string>Refeições: Coffee Break</string>
+	</dict>
+	<dict>
+		<key>slug</key>
+		<string>aval_struct_food_coquetel</string>
+		<key>label</key>
+		<string>Refeições: Coquetel</string>
+	</dict>
+</array>
+</plist>
